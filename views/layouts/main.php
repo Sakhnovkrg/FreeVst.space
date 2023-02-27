@@ -17,9 +17,9 @@ $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
 $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
 $this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta.description'] ?? '']);
-$this->registerMetaTag(['name' => 'og.title', 'content' => $this->params['og.title'] ?? '']);
-$this->registerMetaTag(['name' => 'og.image', 'content' => $this->params['og.image'] ?? Yii::getAlias('@web/img/og.png')]);
-$this->registerMetaTag(['name' => 'og.description', 'content' => $this->params['og.description'] ?? '']);
+$this->registerMetaTag(['property' => 'og.title', 'content' => $this->params['og.title'] ?? '']);
+$this->registerMetaTag(['property' => 'og.image', 'content' => $this->params['og.image'] ?? Yii::getAlias('@web/img/og.png')]);
+$this->registerMetaTag(['property' => 'og.description', 'content' => $this->params['og.description'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
 
 $navbarItems = [];
