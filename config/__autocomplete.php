@@ -20,6 +20,7 @@ class Yii {
 
 /**
  * @property yii\rbac\DbManager $authManager 
+ * @property \sakhnovkrg\yii2\settings\components\Settings $settings
  * @property \yii\web\User|__WebUser $user
  * 
  */

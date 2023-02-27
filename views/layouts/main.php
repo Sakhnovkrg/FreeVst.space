@@ -40,6 +40,8 @@ $this->registerLinkTag(['rel' => 'canonical', 'href' => Url::canonical()]);
 <head>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
+    <?php echo Yii::$app->settings->get('Layout', 'Head scripts'); ?>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
